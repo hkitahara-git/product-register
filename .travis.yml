@@ -3,7 +3,7 @@ sudo: required
 services: docker
 
 before_install:
-  - docker login -u hkitahara -p c1bfdf1e-b666-486f-95bd-7de78d5de728
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_ACCESS_TOKEN
   - docker-compose up --build -d
 
 script:
